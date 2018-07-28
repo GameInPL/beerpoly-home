@@ -1,37 +1,112 @@
 
-html, body, p {
+html, body, p{
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: white;      /*url('../image/newbg.png');*/
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #9f9f9f;
+  background-image: url('../image/tweed.png');
+
+}
+
+
+#sponsor a{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+#sponsor a:hover{
+
+}
+
+
+h1.logo
+{
+	font-size: 44px;
+	font-weight: 700;
+	color: #ddd;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+h2{
+  color: gold;
+}
+
+p{
+  text-align: center;
+  margin: 0 20% 0 20%;
+}
+
+#topnav
+{
+
+	text-align: center;
+}
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #fff;
+}
+
+.menu > li:first-child
+{
+	border-left: 1px dashed #fff;
+}
+
+.menu a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: gold	;
 }
 
 #top-box{
   background-color: black;
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 400px;
+  margin:0px 0% 0% 0%;
+  padding: 0%;
   background-image: url('../image/tlo.png');
   background-position: center;
-  background-size: 1600px;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-#social-icons {
-  position: absolute;
-  top:20px;
-  right:140px;
-
-}
 
 #content-box {
-  min-height: 50vh;
+  min-height: 50;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 60px;
@@ -56,17 +131,19 @@ text-decoration: none;
 .fa-twitter {
 background: #55ACEE;
 color: white;
-margin-left: 5px;
+margin-left: 80%;
 margin-right: 100px;
 }
 
 #stopka {
-width: 100vw;
-height: 57px;
+margin:50px 0% 0% 10%;
+padding-top: 10px;
+width: 80vw;
+height: 63px;
 background-color: gold;
 }
 
-#social-icons2{
+#social-icons{
 text-align: center;
 }
 
@@ -76,19 +153,30 @@ text-align: center;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 996px;
-  position: absolute;
+  background-size: 35%;
+
 }
 
-#kozly {
+#goat1 {
   background-image: url('../image/kozly.png');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 800px;
-  position: absolute;
+  background-size: 10%;
+  float:left;
+
 }
+
+/* #goat2 {
+  background-image: url('../image/kozly.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 6%;
+  float:left;
+} */
 
 .konteks{
   width: 100vw;
