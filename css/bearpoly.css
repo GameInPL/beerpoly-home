@@ -6,6 +6,7 @@ html, body, p {
 body {
   /*background-image: url('../image/tweed.png');*/
   background-color: #fff;
+  font-family: Arial;
 }
 
 h1.logo {
@@ -47,10 +48,29 @@ p {
   text-align: center;
 }
 
+
 #Our_Player,
 #Developer,
 #Patron {
   display: inline-block;
+}
+
+#Our_Player p,
+#Developer p,
+#Patron p{
+  margin-top: 20px;
+}
+
+#Our_Player:hover,
+#Developer:hover,
+#Patron:hover{
+  background: gold;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #000;
+  transform: rotate(-20deg);
+  transition-duration: 0.7s;
+  animation-timing-function: linear;
 }
 
 #Our_Player {
@@ -61,9 +81,6 @@ p {
   border-color: gold;
 }
 
-#Our_Player p {
-  margin-top: 20px;
-}
 
 #Developer {
   width: 200px;
@@ -73,9 +90,6 @@ p {
   border-color: gold;
 }
 
-#Developer p {
-  margin-top: 20px;
-}
 
 #Patron {
   width: 200px;
@@ -85,9 +99,6 @@ p {
   border-color: gold;
 }
 
-#Patron p {
-  margin-top: 20px;
-}
 
 .c {
   clear: both;
