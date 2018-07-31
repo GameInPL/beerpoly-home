@@ -14,7 +14,6 @@ h1.logo
 {
 	font-size: 44px;
 	font-weight: 700;
-
   color: gold;
   text-shadow: black 0.001em 0.001em 0.001em;
 	text-align: center;
@@ -36,6 +35,63 @@ p{
   text-align: center;
   margin: 0 20% 0 20%;
 }
+
+#infographics{
+  text-align: center;
+  margin: 20px;
+  margin-left: 18%;
+  background-position: center;
+  position: center;
+}
+
+  #Our_Player{
+    width: 200px;
+    height: 300px;
+    margin: 100px;
+    border-style: solid;
+   	border-width:4px;
+	  border-color:gold;
+    float: left;
+
+  }
+
+    #Our_Player p{
+      margin-top: 20px;
+    }
+
+  #Developer{
+    width: 200px;
+    height: 300px;
+    margin: 100px;
+    border-style: solid;
+    border-width:4px;
+    border-color:gold;
+    float: left;
+  }
+
+    #Developer p{
+      margin-top: 20px;
+    }
+
+  #Patron{
+    width: 200px;
+    height: 300px;
+    margin: 100px;
+    border-style: solid;
+    border-width:4px;
+    border-color:gold;
+    float: left;
+  }
+
+    #Patron p{
+      margin-top: 20px;
+    }
+
+
+
+  .c{
+    clear: both;
+  }
 
 #topnav
 {
@@ -97,7 +153,8 @@ p{
   font-size: 60px;
   font-weight: bold;
 }
-.fa {padding: 20px;
+.fa {
+padding: 30px 20px 20px 20px;
 font-size: 30px
 width: 50px;
 text-align: center;
@@ -122,20 +179,27 @@ float:left;
 text-align: center;
 }
 
+
+#belt{
+  background-color: gold;
+}
+
 footer {
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40%;
+  margin-right: 40%;
   text-align: center;
-  background-color: gold;
   background-position: center;
+  position:center;
 }
 
 #social-icons{
-text-align: center;
-margin-left: 35%;
-float:left;
-background-position: center;
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+  background-position: center;
+  background-color: gold;
+  float: left;
 }
 
 #brama {
@@ -174,8 +238,9 @@ background-position: center;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	padding: 20px;
+	padding: 20px 0px 20px 0px;
   background-color:#ffffff;
+  position: center;
   float:left;
 
 }
