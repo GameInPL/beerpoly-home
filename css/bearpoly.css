@@ -33,21 +33,32 @@ p {
 }
 
 #infographics {
+  width: 80%;
+  min-width: 650px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+#infographics>* {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  display: inline-block;
   text-align: center;
-  margin: 20px;
-  margin-left: 18%;
-  background-position: center;
-  position: center;
+}
+
+#Our_Player,
+#Developer,
+#Patron {
+  display: inline-block;
 }
 
 #Our_Player {
   width: 200px;
   height: 300px;
-  margin: 100px;
   border-style: solid;
   border-width: 4px;
   border-color: gold;
-  float: left;
 }
 
 #Our_Player p {
@@ -57,11 +68,9 @@ p {
 #Developer {
   width: 200px;
   height: 300px;
-  margin: 100px;
   border-style: solid;
   border-width: 4px;
   border-color: gold;
-  float: left;
 }
 
 #Developer p {
@@ -71,11 +80,9 @@ p {
 #Patron {
   width: 200px;
   height: 300px;
-  margin: 100px;
   border-style: solid;
   border-width: 4px;
   border-color: gold;
-  float: left;
 }
 
 #Patron p {
@@ -235,4 +242,8 @@ footer {
 
 @font-face {
   font-family: 'Montserrat', 'sans-serif';
+}
+
+.clear {
+  clear: both;
 }
