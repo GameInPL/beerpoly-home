@@ -34,18 +34,30 @@ p {
 }
 
 #infographics {
-  width: 80%;
+  width: 45%;
   min-width: 650px;
   margin: auto;
   padding: 20px 0;
+  text-align: center;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #infographics>* {
+    margin: 20px;
+    clear: both;
+
+    }
 }
 
 #infographics>* {
   width: 33%;
+  margin: 20px;
   float: left;
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
+  background-position: center;
 }
 
 
