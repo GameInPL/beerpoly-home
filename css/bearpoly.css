@@ -44,7 +44,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   #infographics>* {
-    width: 45%;
+    width: 100%;
     margin: 20px;
     clear: both;
 
