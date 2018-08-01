@@ -42,6 +42,11 @@ p {
   background-position: center;
 }
 
+#infographics:hover{
+  width: 45%;
+  transition-duration: 1s
+}
+
 @media only screen and (max-width: 600px) {
   #infographics>* {
     width: 100%;
