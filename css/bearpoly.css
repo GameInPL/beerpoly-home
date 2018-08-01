@@ -34,8 +34,8 @@ p {
 }
 
 #infographics {
-  width: 45%;
-  min-width: 650px;
+  width: 33%;
+  min-width: 750px;
   margin: auto;
   padding: 20px 0;
   text-align: center;
@@ -44,6 +44,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   #infographics>* {
+    width: 45%;
     margin: 20px;
     clear: both;
 
@@ -276,6 +277,7 @@ footer {
   position: center;
   float: left;
 }
+
 
 .konteks {
   width: 100vw;
