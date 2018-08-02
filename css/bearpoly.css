@@ -252,16 +252,18 @@ footer {
   float: left;
 }
 
-.br{
+#br{
   text-align: center;
   background-position: center;
-  margin-left: 50%;
+
 }
 
-.ko{
+#ko{
   text-align: center;
   background-position: center;
-  margin-left: 1000px;
+  margin-left: 45%;
+  margin-top: 135px;
+
 }
 
 #brama {
