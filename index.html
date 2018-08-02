@@ -7,11 +7,22 @@
   <link rel="stylesheet" type="text/css" href="css/bearpoly.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="path/to/parallax.js"></script>
+  <script src="./parallax.js"></script>
 </head>
 
 <body>
-  <h1 class="logo">Beerpoly</h1>
+
+
+ <h1 class="logo">Beerpoly</h1>
+
   <div id="top-box">
+    <ul id = "scene" >
+      <li clas="layer" data-depth = " 0.40 " ><img src='image/brama.png' class="br" width="200" height="200" /></li>
+      <li clas="layer" data-depth = " 0.80 " ><img src='image/kozly.png' class="ko" width="80" height="80"/></li>
+    </ul >
+    </div>
     <nav id="topnav">
       <ul class="menu">
         <li><a href="http://ci.gamein.pl:8082/">Strona główna</a></li>
@@ -24,9 +35,9 @@
       </ul>
     </nav>
 
-    <div id="goat1"> </div>
+    <!-- <div id="goat1"> </div>
     <div id="goat2"> </div>
-    <div id="brama"> </div>
+    <div id="brama"> </div> -->
 
   </div>
   <div id="content-box">
@@ -50,11 +61,10 @@
     <div id="infographics">
 
         <div id="Our_Player" class="swing"><a href="#Games" class="link">
-          <h3>Naszych Najlepszych Graczy</h3>
+          <h3>Naszych <br> Graczy</h3>
           <img class="obrazek" src='image/przyklad.png' width="100" height="100" ; alt="infographics" />
           <p>Gra za Free baw sie do woli </p></a>
         </div>
-
 
 
         <div id="Developer" class="swing"><a href="#Games" class="link">
@@ -64,9 +74,8 @@
         </div>
 
 
-
         <div id="Patron" class="swing"><a href="#Games" class="link">
-          <h3>Naszych Patronów</h3>
+          <h3>Naszych <br> Patronów</h3>
           <img class="obrazek" src='image/przyklad.png' width="100" height="100" ; alt="infographics" />
           <p>zapraszamy </p></a>
         </div>
@@ -92,6 +101,12 @@
       </div>
     </div>
   </div>
+  <script>
 
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
 </body>
 <html>

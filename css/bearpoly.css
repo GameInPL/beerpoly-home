@@ -65,7 +65,7 @@ p {
 }
 
 #infographics:hover>*{
-  
+
 }
 
 #Our_Player>*,
@@ -86,6 +86,7 @@ p {
 #Developer p,
 #Patron p{
   margin-top: 20px;
+  text-align: center;
 }
 
 #Our_Player:hover,
@@ -249,6 +250,18 @@ footer {
   background-position: center;
   background-color: gold;
   float: left;
+}
+
+.br{
+  text-align: center;
+  background-position: center;
+  margin-left: 50%;
+}
+
+.ko{
+  text-align: center;
+  background-position: center;
+  margin-left: 1000px;
 }
 
 #brama {
