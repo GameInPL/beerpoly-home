@@ -256,17 +256,20 @@ footer {
   text-align: center;
   background-position: center;
 
+
 }
 
-#ko{
+#go{
   text-align: center;
   background-position: center;
-  margin-left: 45%;
-  margin-top: 135px;
+  margin-left: 46%;
+  margin-top: 8%;
 
 }
 
-#brama {
+
+
+/* #brama {
   background-image: url('../image/brama.png');
   height: 100%;
   width: 100%;
@@ -283,7 +286,7 @@ footer {
   background-position: center;
   background-size: 10%;
   float: left;
-}
+} */
 
 /* #goat2 {
   background-image: url('../image/kozly.png');
