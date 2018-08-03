@@ -50,9 +50,27 @@ p {
   #infographics>* {
     width: 100%;
     clear: both;
-
     }
 }
+
+@media only screen and (max-width: 800px) {
+  #go{
+    text-align: center;
+    background-position: center;
+    margin-left: 46%;
+    margin-top: 13%;
+  }
+
+  #bri{
+    width: 300px;
+    height: 300px;
+  }
+
+  #goi{
+    width: 105px;
+    height: 105px;
+  }
+    }
 
 #infographics>* {
   width: 33%;
@@ -63,6 +81,9 @@ p {
   text-align: center;
   background-position: center;
 }
+
+
+
 
 #infographics:hover>*{
 
@@ -268,36 +289,16 @@ footer {
 
 }
 
-
-
-/* #brama {
-  background-image: url('../image/brama.png');
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
+#bri{
+  width: 500px;
+  height: 500px;
 }
 
-#goat1 {
-  background-image: url('../image/kozly.png');
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10%;
-  float: left;
-} */
+#goi{
+  width: 180px;
+  height: 180px;
+}
 
-/* #goat2 {
-  background-image: url('../image/kozly.png');
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 6%;
-  float:left;
-} */
 
 .info {
   margin-left: auto;
