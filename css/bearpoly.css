@@ -42,7 +42,7 @@ p {
   background-position: center;
 }
 
-#infographics:hover{
+#infographics:hover {
   width: 43%;
 }
 
@@ -50,27 +50,25 @@ p {
   #infographics>* {
     width: 100%;
     clear: both;
-    }
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  #go{
+  #go {
     text-align: center;
     background-position: center;
     margin-left: 46%;
     margin-top: 13%;
   }
-
-  #bri{
+  #bri {
     width: 300px;
     height: 300px;
   }
-
-  #goi{
+  #goi {
     width: 105px;
     height: 105px;
   }
-    }
+}
 
 #infographics>* {
   width: 33%;
@@ -82,43 +80,29 @@ p {
   background-position: center;
 }
 
+#infographics:hover>* {}
 
-
-
-#infographics:hover>*{
-
-}
-
-#Our_Player>*,
-#Developer>*,
-#Patron>* {
+#Our_Player>*, #Developer>*, #Patron>* {
   text-align: center;
   display: inline-block;
-
 }
 
-#Our_Player:hover>*,
-#Developer:hover>*,
-#Patron:hover>* {
+#Our_Player:hover>*, #Developer:hover>*, #Patron:hover>* {
   display: inline-block;
 }
 
-#Our_Player p,
-#Developer p,
-#Patron p{
+#Our_Player p, #Developer p, #Patron p {
   margin-top: 20px;
   text-align: center;
 }
 
-#Our_Player:hover,
-#Developer:hover,
-#Patron:hover{
+#Our_Player:hover, #Developer:hover, #Patron:hover {
   background: gold;
   border-style: solid;
   border-width: 4px;
   border-color: #000;
   animation-timing-function: linear;
-  cursor:pointer;
+  cursor: pointer;
   opacity: 1;
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
@@ -126,22 +110,20 @@ p {
   transform: perspective(800px) rotateX(50deg);
   transition-duration: 1s;
   animation-timing-function: linear;
-  cursor:pointer;
+  cursor: pointer;
 }
 
+.obrazek:hover {
+  width: 150px;
+  height: 80px;
+  transform: skewY(20deg);
+  transition-duration: 0.7s;
+}
 
-  .obrazek:hover{
-    width: 150px;
-    height: 80px;
-    transform: skewY(20deg);
-    transition-duration: 0.7s;
-  }
-a{
+a {
   color: black;
-   text-decoration: none;
- }
-
-
+  text-decoration: none;
+}
 
 #Our_Player {
   width: 200px;
@@ -151,7 +133,6 @@ a{
   border-color: gold;
 }
 
-
 #Developer {
   width: 200px;
   height: 300px;
@@ -159,7 +140,6 @@ a{
   border-width: 4px;
   border-color: gold;
 }
-
 
 #Patron {
   width: 200px;
@@ -273,32 +253,28 @@ footer {
   float: left;
 }
 
-#br{
+#br {
   text-align: center;
   background-position: center;
   margin: -5% 0 0 0;
-
-
 }
 
-#go{
+#go {
   text-align: center;
   background-position: center;
   margin-left: 46%;
   margin-top: 8%;
-
 }
 
-#bri{
+#bri {
   width: 500px;
   height: 500px;
 }
 
-#goi{
+#goi {
   width: 180px;
   height: 180px;
 }
-
 
 .info {
   margin-left: auto;
@@ -309,7 +285,6 @@ footer {
   position: center;
   float: left;
 }
-
 
 .konteks {
   width: 100vw;
