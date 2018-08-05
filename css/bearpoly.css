@@ -108,10 +108,7 @@ p {
 }
 
 .swing:hover .obrazek {
-
-  width: 150px;
-  height: 80px;
-  transform: skewY(20deg);
+  transform: rotate(40deg);
   transition-duration: 0.7s;
 }
 
