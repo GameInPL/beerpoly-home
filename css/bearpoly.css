@@ -112,12 +112,6 @@ p {
   transition-duration: 0.7s;
 }
 
-/* .obrazek:hover {
-  width: 150px;
-  height: 80px;
-  transform: skewY(20deg);
-  transition-duration: 0.7s;
-} */
 
 a {
   color: black;
@@ -192,7 +186,7 @@ a {
   height: 400px;
   margin: 0px 0% 0% 0%;
   padding: 0%;
-  background-image: url('../image/tlo.png');
+  background-image: url('../image/background.png');
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -236,20 +230,23 @@ a {
 
 footer {
   margin-top: 50px;
-  margin-left: 40%;
-  margin-right: 40%;
+  text-align: center;
+  background: gold;
+  width: 100vw;
   text-align: center;
   background-position: center;
-  position: center;
+
+  bottom: 0;
 }
 
 #social-icons {
+  margin: auto;
+  max-width: 450px;
   display: flex;
   box-sizing: border-box;
   text-align: center;
   background-position: center;
-  background-color: gold;
-  float: left;
+  background-color: white;
 }
 
 #scene {
@@ -260,7 +257,7 @@ footer {
 #br {
   width: 100%;
   height: 100%;
-  background-image: url('../image/brama.png');
+  background-image: url('../image/gate.png');
   background-size: 240px;
   background-repeat: no-repeat;
   background-position: center;
