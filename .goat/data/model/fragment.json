@@ -1,0 +1,35 @@
+{
+  "model": {
+    "fragment": {
+      "entity": "fragment",
+      "admin_read_roles":   "admin",
+      "admin_insert_roles": "admin",
+      "admin_edit_roles":   "admin",
+      "admin_delete_roles": "admin",
+      "label":"name",
+      "fields": {
+        "0": {
+          "name": "lang",
+          "system": "n",
+          "type": "lang",
+          "unique": "n",
+          "required": "y"
+        },
+        "1": {
+          "name": "name",
+          "system": "n",
+          "type": "string",
+          "unique": "n",
+          "required": "y"
+        },
+        "2": {
+          "name": "content",
+          "system": "n",
+          "type": "text",
+          "unique": "n",
+          "required": "y"
+        }
+      }
+    }
+  }
+}

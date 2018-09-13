@@ -1,0 +1,33 @@
+{{define "head"}}
+  {{$prefix:=(print .Lang ".layout.")}}
+	<head>
+    <!-- Encoding http-equiv -->
+    <meta http-equiv="Content-Language" content="pl-PL" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- The Open Graph protocol  -->
+    <meta property="og:title" content="BeerPooly" />
+    <meta property="og:description" content="Beerpoly to nowy projekt rodowitych Poznaniaków. Opiera się na kultowej grze Monopoly, ale klimat Poznania i wprowadzone nowe pomysły sprawią, że będzie to doskonała rozrywka dla każdej grupy znajomych żądnej zabawy. Co w niej takiego 'innego', że aż się zechce w nią grać?" />
+    <meta property="og:image" content="image/og-image.png" />
+    <meta property="og:image:alt" content="BeerPoly - Opiera się na kultowej grze Monopoly, ale klimat Poznania" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="700" />
+    <!-- Bundles -->
+    <script src="/static/base.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/base.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- Classic metadata -->
+    <meta name="description" content="Beerpoly to gra stworzona przez Poznaniaków etc." />
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Beerpoly, poznan, gra, kozy,alkohol, piwo, gra planszowa" />
+    <title>{{TranslateFor "head_title" $prefix}}</title>
+    <!-- Navigation -->
+    <base target="_top">
+    <!-- Ext -->
+    {{template "headex" .}}
+	</head>
+{{end}}
+
+{{define "headex"}}{{end}}

@@ -1,0 +1,54 @@
+{{- define "admin.views.model.list" -}}
+{{- $ctx := . -}}
+{{- $name := (index $ctx.Data (print .From ".entity")) -}}
+{{- $labelField := (index $ctx.Data (print .From ".label")) -}}
+{{- $entityName := (camelcaseuf $name) -}}
+{{- $fieldsBaseKey := (print .From ".fields.") -}}
+{{- $fields := (sort (keys $ctx.Data $fieldsBaseKey)) -}}
+{{- $systemFields := (findRows $fieldsBaseKey "^[A-Za-z0-9]+$" ".system" "y" $ctx.Data) -}}
+{{- $mainFields := (except $fields $systemFields) -}}
+
+{{- noescape "{{- define \"content\" -}}" }}
+
+{{ "{{" }} $prefix := (print .Lang ".view.admin.model.{{lower $name}}.list.") }}
+<div class="admin-view {{lower $entityName}}-admin-view">
+
+<h1>{{$entityName}}</h1>
+
+<div class="top-nav">
+  {{- $hrefAttr := (print "href=\"/admin/" (lower $entityName) "/insert\"") }}
+  <a type="button" class="btn btn-primary" {{$hrefAttr|safeHTMLAttr}}>
+    {{noescape "{{" }} TranslateFor "insert_btn" $prefix }}</a>
+  </a>
+</div>
+
+{{ noescape "{{ if eq (len .Data.Collection) 0 -}}" }}
+No data to show
+{{ noescape "{{- else }}" }}
+  <div class="admin-table">
+    <div class="row head">
+      {{- range $i, $fieldkey := $mainFields -}}
+      {{- $fieldName := (camelcaseuf (index $ctx.Data (print $fieldsBaseKey $fieldkey ".name"))) }}
+      {{- $fieldType := (lower (index $ctx.Data (print $fieldsBaseKey $fieldkey ".type"))) }}
+        <div class="col {{$fieldType}} {{- if eq (lower $labelField) (lower $fieldName)}} main{{- end -}}">{{$fieldName}}</div>
+      {{- end }}
+      <div class="col tools"></div>
+    </div>
+    {{- noescape "{{- " -}} range $i, $row := .Data.Collection }}
+    <div class="row">
+      {{- range $i, $fieldkey := $mainFields -}}
+      {{- $fieldName := (camelcaseuf (index $ctx.Data (print $fieldsBaseKey $fieldkey ".name"))) }}
+      {{- $fieldType := (lower (index $ctx.Data (print $fieldsBaseKey $fieldkey ".type"))) }}
+        <div class="col {{$fieldType}} {{- if eq (lower $labelField) (lower $fieldName)}} main{{- end -}}">{{- noescape "{{- " -}} $row.{{$fieldName}} -}}</div>
+      {{- end }}
+      <div class="col tools">
+          {{noescape "{{-" }} template "tools" (dict "Row" $row "Prefix" $prefix) -}}
+      </div>
+    </div>
+    {{ noescape "{{- end }}" }}
+  </div>
+{{ noescape "{{- end }}" }}
+</div>
+
+{{ noescape "{{- end }}" }}
+{{- end -}}

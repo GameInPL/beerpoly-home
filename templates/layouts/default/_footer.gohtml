@@ -1,0 +1,11 @@
+{{define "footer"}}
+  {{$prefix:=(print .Lang ".layout.footer.")}}
+  <nav class="footer-navbar" role="navigation">
+    {{- if .LoggedInUser }}
+    <a href="/user/signout" role="button" id="signout-btn">{{TranslateFor "signout" $prefix}}</a>
+    {{- else }}
+    <a href="/user/signup" role="button" id="signup-btn">{{TranslateFor "signup" $prefix}}</a>
+    | <a href="/user/signin" role="button" id="signin-btn">{{TranslateFor "signin" $prefix}}</a>
+    {{- end }}
+  </nav>
+{{end}}

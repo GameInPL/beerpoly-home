@@ -1,0 +1,14 @@
+{
+  "lang.pl.layout": {
+    "footer": {
+      "title": "Beerpoly",
+      "signup": "Rejestracja",
+      "signin": "Logowanie",
+      "signout": "Wylogowanie"
+    },
+    "head_title": "Beerpoly",
+    "navbar": {
+      "home": "Beerpoly",
+    }
+  }
+}
