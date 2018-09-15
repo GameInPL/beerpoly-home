@@ -1,0 +1,56 @@
+{
+  "model": {
+    "user": {
+      "entity": "user",
+      "admin_read_roles":   "admin",
+      "admin_insert_roles": "admin",
+      "admin_edit_roles":   "admin",
+      "admin_delete_roles": "admin",
+      "label":"user",
+      "fields": {
+        "0": {
+          "name": "firstname",
+          "system": "n",
+          "type": "string",
+          "unique": "n",
+          "required": "y"
+        },
+        "1": {
+          "name": "lastname",
+          "system": "n",
+          "type": "string",
+          "unique": "n",
+          "required": "y"
+        },
+        "2": {
+          "name": "email",
+          "system": "n",
+          "type": "email",
+          "unique": "y",
+          "required": "y"
+        },
+        "3": {
+          "name": "password",
+          "system": "y",
+          "type": "password",
+          "unique": "n",
+          "required": "n"
+        },
+        "4": {
+          "name": "roles",
+          "system": "y",
+          "type": "string",
+          "unique": "n",
+          "required": "n"
+        },
+        "5": {
+          "name": "username",
+          "system": "n",
+          "type": "string",
+          "unique": "y",
+          "required": "y"
+        }
+      }
+    }
+  }
+}

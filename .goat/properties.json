@@ -1,0 +1,12 @@
+{
+  "app": {
+    "id": "BeerpolyHome",
+    "baseURL": "http://localhost:555",
+    "lang": {
+      "default": "en"
+    },
+    "name": "Beerpoly",
+    "port": "2078"
+  },
+  "goatcms_package": "github.com/gameinpl/beerpoly-home/modules/goatcms"
+}

@@ -1,0 +1,13 @@
+[{
+  "to":"config",
+  "template":"config",
+},{
+  "to":"translates",
+  "template":"translates",
+},{
+  "to":"templates/views/admin",
+  "template":"admin/views",
+},{
+  "to":"templates/helpers/forms",
+  "template":"form/view",
+}]

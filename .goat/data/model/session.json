@@ -1,0 +1,37 @@
+{
+  "model": {
+    "session": {
+      "entity": "session",
+      "admin_read_roles":   "admin",
+      "admin_insert_roles": "admin",
+      "admin_edit_roles":   "admin",
+      "admin_delete_roles": "admin",
+      "label":"secret",
+      "fields": {
+        "0": {
+          "name": "secret",
+          "required": "y",
+          "system": "n",
+          "type": "string",
+          "unique": "y"
+        },
+        "1": {
+          "name": "expires",
+          "required": "y",
+          "system": "n",
+          "type": "int",
+          "unique": "n"
+        }
+      },
+      "relations": {
+        "0": {
+          "model": "user",
+          "name": "user",
+          "required": "y",
+          "system": "y",
+          "unique": "n"
+        }
+      }
+    }
+  }
+}

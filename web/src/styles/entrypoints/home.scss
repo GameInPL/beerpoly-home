@@ -186,7 +186,7 @@ a {
   height: 400px;
   margin: 0px 0% 0% 0%;
   padding: 0%;
-  background-image: url('../image/background.png');
+  background-image: url('/static/image/background.png');
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -202,7 +202,7 @@ a {
 
 .fa {
   padding: 30px 20px 20px 20px;
-  font-size: 30px width: 50px;
+  //font-size: 30px width: 50px;
   text-align: center;
   text-decoration: none;
 }
@@ -257,7 +257,7 @@ footer {
 #br {
   width: 100%;
   height: 100%;
-  background-image: url('../image/gate.png');
+  background-image: url('/static/image/gate.png');
   background-size: 240px;
   background-repeat: no-repeat;
   background-position: center;
@@ -266,7 +266,7 @@ footer {
 #go {
   width: 100%;
   height: 100%;
-  background-image: url('../image/goat.png');
+  background-image: url('/static/image/goat.png');
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
