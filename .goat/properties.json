@@ -8,5 +8,10 @@
     "name": "Beerpoly",
     "port": "2078"
   },
+  "menu": {
+    "OpenSourceLink": "https://github.com/gameinpl",
+    "GameLink": "http://cicd.firmom.com:2077/",
+    "DownloadLink": "http://cicd.firmom.com:2079/gameinpl/beerpoly/"
+  },
   "goatcms_package": "github.com/gameinpl/beerpoly-home/modules/goatcms"
 }
