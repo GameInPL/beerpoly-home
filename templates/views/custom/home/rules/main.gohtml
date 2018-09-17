@@ -4,18 +4,8 @@
 
 <div id="top-box">
   <nav id="topnav">
-    <ul class="menu">
-      <li><a href="/">Strona główna</a></li>
-      <li><a href="h{{ .Data.GameLink }}">Nasza Gra</a></li>
-      <li> <a href="/#Games">O grze</a></li>
-      <li> <a href="/#Team">O Nas</a></li>
-      <li> <a href="/#addTeam">Dołącz Do Nas</a></li>
-      <li><a href="{{ .Data.OpenSourceLink }}">Open Source</a></li>
-      <li><a href="{{ .Data.DownloadLink }}">Pobierz</a></li>
-      <li><a href="/rules">Zasady</a></li>
-    </ul>
-    <div>
-    </div>
+    {{template "main_menu" .}}
+    <div></div>
   </nav>
 </div>
 <h1 class="logo">Beerpoly</h1>

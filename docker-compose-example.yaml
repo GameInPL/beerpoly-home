@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  cicd:
+    image: gameinpl/beerpoly-home
+    networks:
+      - nproxy
+    restart: always
+    environment:
+      - "TZ=Europe/Warsaw"
+      # routing
+      - "VIRTUAL_HOST=beerpoly.gamein.pl"
+      # App settings and secrets
+      - "APP_HOST=beerpoly.gamein.pl"
+      - "APP_BASE_URL=http://beerpoly.gamein.pl"
+      - "OAUTH_GITHUB_APP=Insert_your_app_id"
+      - "OAUTH_GITHUB_SECRET=Insert_your_app_secret"
+      # Menu (those links are different on dev and production server)
+      - "MENU_OPEN_SOURCE_LINK=Insert_your_opensource_link"
+      - "MENU_GAME_LINK=Insert_your_game_link"
+      - "MENU_DOWNLOAD_LINK=Insert_your_donwload_link"
+    volumes:
+      - "/dockerdata/gameinpl/beerpoly-home/data:/data"
+    expose:
+      - 2078
+
+
+networks:
+  nproxy:
+    external:
+      name: nproxy
+  default:

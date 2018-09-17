@@ -10,8 +10,8 @@ import (
 	"github.com/goatcms/goatcore/goathtml"
 )
 
-// Rules is rules controller struct
-type Rules struct {
+// Home is home controller struct
+type Home struct {
 	deps struct {
 		Template       services.Template `dependency:"TemplateService"`
 		OpenSourceLink string            `config:"menu.OpenSourceLink"`
@@ -21,14 +21,14 @@ type Rules struct {
 	view *template.Template
 }
 
-// NewRules create a new instance of Rules controller
-func NewRules(dp dependency.Provider) (*Rules, error) {
+// NewHome create a new instance of Home controller
+func NewHome(dp dependency.Provider) (*Home, error) {
 	var err error
-	ctrl := &Rules{}
+	ctrl := &Home{}
 	if err = dp.InjectTo(&ctrl.deps); err != nil {
 		return nil, err
 	}
-	ctrl.view, err = ctrl.deps.Template.View(goathtml.DefaultLayout, "custom/home/rules", nil)
+	ctrl.view, err = ctrl.deps.Template.View(goathtml.DefaultLayout, "custom/home/main", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -36,7 +36,7 @@ func NewRules(dp dependency.Provider) (*Rules, error) {
 }
 
 // Get is endpoint for HTTP GET request
-func (c *Rules) Get(requestScope app.Scope) (err error) {
+func (c *Home) Get(requestScope app.Scope) (err error) {
 	var (
 		requestDeps struct {
 			Responser requestdep.Responser `request:"ResponserService"`
