@@ -13,7 +13,10 @@ import (
 // Rules is rules controller struct
 type Rules struct {
 	deps struct {
-		Template services.Template `dependency:"TemplateService"`
+		Template       services.Template `dependency:"TemplateService"`
+		OpenSourceLink string            `config:"website.menu.OpenSourceLink"`
+		GameLink       string            `config:"website.menu.GameLink"`
+		DownloadLink   string            `config:"website.menu.DownloadLink"`
 	}
 	view *template.Template
 }
@@ -42,5 +45,9 @@ func (c *Rules) Get(requestScope app.Scope) (err error) {
 	if err = requestScope.InjectTo(&requestDeps); err != nil {
 		return err
 	}
-	return requestDeps.Responser.Execute(c.view, nil)
+	return requestDeps.Responser.Execute(c.view, map[string]string{
+		"OpenSourceLink": c.deps.OpenSourceLink,
+		"GameLink":       c.deps.GameLink,
+		"DownloadLink":   c.deps.DownloadLink,
+	})
 }
