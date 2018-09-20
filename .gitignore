@@ -1,6 +1,9 @@
 # .goat - personal data
 /.goat/secrets.json
 
+# docker
+/docker-compose.yaml
+
 # genereted files
 /translates
 /modules
@@ -35,6 +38,7 @@ npm-debug.log
 *.exe
 *.log
 /tmp/
+/vendor
 
 # build
 ./main

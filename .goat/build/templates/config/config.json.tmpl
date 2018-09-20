@@ -33,6 +33,11 @@
       "app": "{{index .Properties.Secrets "oauth.github.app"}}",
       "secret": "{{index .Properties.Secrets "oauth.github.secret"}}"
     }
+  },
+  "menu": {
+    "OpenSourceLink": "{{index .Properties.Project "menu.OpenSourceLink"}}",
+    "GameLink": "{{index .Properties.Project "menu.GameLink"}}",
+    "DownloadLink": "{{index .Properties.Project "menu.DownloadLink"}}"
   }
 }
 {{end}}

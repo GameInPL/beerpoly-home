@@ -12,10 +12,17 @@ func InitDependencies(a app.App) (err error) {
 			Router services.Router `dependency:"RouterService"`
 		}
 		rules *Rules
+		home  *Home
 	)
-	if err := a.DependencyProvider().InjectTo(&deps); err != nil {
+	if err = a.DependencyProvider().InjectTo(&deps); err != nil {
 		return err
 	}
+	// home
+	if home, err = NewHome(a.DependencyProvider()); err != nil {
+		return err
+	}
+	deps.Router.OnGet("/", home.Get)
+	// rules
 	if rules, err = NewRules(a.DependencyProvider()); err != nil {
 		return err
 	}
