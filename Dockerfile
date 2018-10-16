@@ -22,6 +22,7 @@ RUN mv /go/src/github.com/gameinpl/beerpoly-home /app
 
 WORKDIR /app
 RUN rm -rf .goat && \
+  rm -rf bphapp && \
   rm -rf slotsapp && \
   rm -rf vendor && \
   rm -rf modules && \
