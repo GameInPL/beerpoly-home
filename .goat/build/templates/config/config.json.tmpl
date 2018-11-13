@@ -1,52 +1,57 @@
-{{define "config"}}
+{{- define "config" -}}
+{{- $ctx := .ctx -}}
+{{- $cached := .cached -}}
 {
   "mailer": {
     "smtp": {
-      "addr": "{{index .Properties.Secrets "smtp.address"}}",
+      "addr": "{{index $ctx.Properties.Secrets "smtp.address"}}",
       "auth": {
-        "username": "{{index .Properties.Secrets "smtp.user"}}",
-        "password": "{{index .Properties.Secrets "smtp.password"}}",
-        "identity": "{{index .Properties.Secrets "smtp.identity"}}"
+        "username": "{{index $ctx.Properties.Secrets "smtp.user"}}",
+        "password": "{{index $ctx.Properties.Secrets "smtp.password"}}",
+        "identity": "{{index $ctx.Properties.Secrets "smtp.identity"}}"
       }
     }
   },
   "translate": {
-    "langs": "{{join (keys .Data "lang.") ", "}}",
-    "default": "{{index .Properties.Project "app.lang.default"}}"
+    "langs": "{{join (keys $ctx.Data "lang.") ", "}}",
+    "default": "{{index $ctx.Properties.Project "app.lang.default"}}"
   },
   "router": {
-    "host": ":{{index .Properties.Project "app.port"}}",
+    "host": ":{{index $ctx.Properties.Project "app.port"}}",
     "security": {
       "mode": "TLS",
       "cert": "./data/certs/fullchain.pem",
       "key": "./data/certs/privkey.pem"
     }
   },
-  {{- if eq (index .Properties.Secrets "database.engine") "sqlite" }}
+  {{- if eq (index $ctx.Properties.Secrets "database.engine") "sqlite" }}
   "database": {
     "engine": "sqlite3",
     "url": "file:data/main.db"
   },
   {{- end }}
-  {{- if eq (index .Properties.Secrets "database.engine") "postgres" }}
+  {{- if eq (index $ctx.Properties.Secrets "database.engine") "postgres" }}
   "database": {
     "engine": "postgres",
-    "url": "postgres://{{index .Properties.Secrets "database.username"}}:{{index .Properties.Secrets "database.password"}}@{{index .Properties.Secrets "database.host"}}/{{index .Properties.Secrets "database.name"}}?sslmode=disable"
+    "url": "postgres://{{index $ctx.Properties.Secrets "database.username"}}:{{index $ctx.Properties.Secrets "database.password"}}@{{index $ctx.Properties.Secrets "database.host"}}/{{index $ctx.Properties.Secrets "database.name"}}?sslmode=disable"
   },
   {{- end }}
   "app": {
-    "baseURL": "{{index .Properties.Secrets "app.baseURL"}}"
+    "baseURL": "{{index $ctx.Properties.Secrets "app.baseURL"}}"
   },
   "oauth": {
     "github": {
-      "app": "{{index .Properties.Secrets "oauth.github.app"}}",
-      "secret": "{{index .Properties.Secrets "oauth.github.secret"}}"
+      "app": "{{index $ctx.Properties.Secrets "oauth.github.app"}}",
+      "secret": "{{index $ctx.Properties.Secrets "oauth.github.secret"}}"
     }
   },
+  "template": {
+    "cached": "{{- if $cached -}}true{{- else -}}false{{- end -}}"
+  },
   "menu": {
-    "OpenSourceLink": "{{index .Properties.Project "menu.OpenSourceLink"}}",
-    "GameLink": "{{index .Properties.Project "menu.GameLink"}}",
-    "DownloadLink": "{{index .Properties.Project "menu.DownloadLink"}}"
+    "OpenSourceLink": "{{index $ctx.Properties.Project "menu.OpenSourceLink"}}",
+    "GameLink": "{{index $ctx.Properties.Project "menu.GameLink"}}",
+    "DownloadLink": "{{index $ctx.Properties.Project "menu.DownloadLink"}}"
   }
 }
-{{end}}
+{{- end -}}
