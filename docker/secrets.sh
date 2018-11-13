@@ -21,6 +21,7 @@ cat > .goat/secrets.json << EndOfMessage
       "app": "",
       "secret": ""
     }
-  }
+  },
+  "router.security.mode": "HTTPS"
 }
 EndOfMessage

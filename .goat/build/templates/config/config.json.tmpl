@@ -18,11 +18,18 @@
   },
   "router": {
     "host": ":{{index $ctx.Properties.Project "app.port"}}",
+    {{- if eq (index $ctx.Properties.Secrets "router.security.mode") "HTTPS" }}
     "security": {
       "mode": "TLS",
       "cert": "./data/certs/fullchain.pem",
       "key": "./data/certs/privkey.pem"
     }
+    {{- end }}
+    {{- if eq (index $ctx.Properties.Secrets "router.security.mode") "HTTP" }}
+    "security": {
+      "mode": "HTTP"
+    }
+    {{- end }}
   },
   {{- if eq (index $ctx.Properties.Secrets "database.engine") "sqlite" }}
   "database": {
