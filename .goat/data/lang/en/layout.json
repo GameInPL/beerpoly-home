@@ -1,12 +1,14 @@
 {
   "lang.en.layout": {
-    "footer": "GoatCMS",
-    "head_title": "GoatCMS",
-    "navbar": {
-      "home": "GoatCMS",
+    "footer": {
+      "title": "Beerpoly",
       "signup": "sign up",
       "signin": "sign in",
       "signout": "sign out"
+    },
+    "head_title": "GoatCMS",
+    "navbar": {
+      "home": "GoatCMS"
     },
   }
 }
