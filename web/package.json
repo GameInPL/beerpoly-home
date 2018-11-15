@@ -2,14 +2,14 @@
   "name": "beerpoly-home",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode=production  --progress --profile --colors --display-error-details --display-cached",
-    "build-dev": "webpack --mode=development  --progress --profile --colors --display-error-details --display-cached",
-    "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "build": "webpack --mode=production --progress --profile --colors --display-error-details --display-cached",
+    "build-dev": "webpack --mode=development --progress --profile --colors --display-error-details --display-cached",
+    "dev": "webpack --progress --profile --colors --display-error-details --watch",
     "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GameInPL/beerpoly-home"
+    "url": "git+https://github.com/GameInPL/beerpoly-home" 
   },
   "license": "GPL3",
   "eslintConfig": {
