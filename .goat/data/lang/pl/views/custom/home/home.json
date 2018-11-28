@@ -12,7 +12,7 @@
       bez fruwających w powietrzu kart czy pieniędzy."
     },
 
-    "Team": {
+    "team": {
       "title": "O Nas",
       "content": "Jesteśmy grupą ambitnych ludzi, którzy nie umieją usiedzieć w miejscu. Wszyscy jesteśmy
       mocno związani z Poznaniem i znamy się parę ładnych lat. Zebraliśmy nasze umiejętności
@@ -21,23 +21,23 @@
       znaczy, a i możliwe, że znajdziecie tu coś dla siebie."
     },
 
-   "addTeam": {
+   "joinus": {
     "title":"Dołącz do"
     },
 
-   "Our_Player": {
-    "title":"<h3>Naszych<br>Graczy</h3>",
-    "content":"Graj za darmo i  i baw się? do woli!"
+   "player": {
+    "title":"Naszych Graczy",
+    "content":"Graj za darmo i baw się do woli !"
     },
 
-   "Developer": {
-    "title":"<h3>Naszych<br> Developerów</h3>",
-    "content":"Masz ciekawe pomysły? Dołącz do naszej ekipy!"
+   "developer": {
+    "title":"Naszych Developerów",
+    "content":"Masz ciekawe pomysły? Dołącz do naszej ekipy !"
     },
 
-   "Patron": {
-    "title":"<h3>Naszych<br>Patronów</h3>",
-    "content":"Zapraszamy do korzystnej wspó?pracy!"
+   "patron": {
+    "title":"Naszych Patronów",
+    "content":"Zapraszamy do korzystnej wspó?pracy !"
     },
 
 

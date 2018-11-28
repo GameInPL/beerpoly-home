@@ -11,8 +11,7 @@
       so you could play it anytime. Nevertheless, if you prefer so, you can play on your mobile
       device - without any flying cards or cash."
     },
-
-      "Team": {
+    "team": {
         "title": "About Us",
         "content": "We are a group of young ambitious people, who can’t stand sitting in one place. All of us
         have strong connections with Poznan and we know each other for a couple of years.
@@ -21,24 +20,22 @@
         efforts; it means a lot for us. And it is quite possible, that you could also find something for
         you."
     },
-
-      "addTeam": {
+    "joinus": {
         "title":"Join to"
     },
-
-    "Our_Player": {
-      "title":"<h3>Our<br>Players</h3>",
+    "player": {
+      "title":"Our Players",
       "content":"Play for free and enjoy"
     },
 
-    "Developer": {
-      "title":"<h3>Our<br>Developers</h3>",
-      "content":"Do you have creative ideas? Join our team! "
+    "developer": {
+      "title":"Our Developers",
+      "content":"Do you have creative ideas? Join our team ! "
     },
 
-    "Patron": {
-      "title":"<h3>Our<br>Ambassadors/h3>",
-      "content":"Feel invited to cooperate with us!"
+    "patron": {
+      "title":"Our Ambassadors",
+      "content":"Feel invited to cooperate with us !"
     },
 
   }
