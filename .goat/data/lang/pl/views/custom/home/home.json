@@ -3,43 +3,48 @@
     "game": {
       "title": "O Grze",
       "content": "Beerpoly to nowy projekt rodowitych Poznaniaków. Opiera się na kultowej grze Monopoly,
-      ale klimat Poznania i wprowadzone nowe pomysły sprawią, że będzie to doskonała rozrywka
-      dla każdej grupy znajomych żądnej zabawy. Co w niej takiego „innego”, że aż się zechce w
-      nią grać? Zbalansowane rozwiązania, miejsca, które można zobaczyć podczas wycieczki w
-      Poznaniu, nowe zadania, a przede wszystkim – poręczność. Dwoimy się i troimy, aby gra
-      powstała w jak najwyższej jakości, zarówno fizycznie, jak i wirtualnie. Tak, to znaczy, że
-      będzie ona dostępna do wydruku oraz do zagrania w plenerze na urządzeniu mobilnym –
-      bez fruwających w powietrzu kart czy pieniędzy."
+      ale klimat Poznania i wprowadzone nowe pomysły sprawią,
+      że będzie to doskonała rozrywka
+      dla każdej grupy znajomych żądnej zabawy.Co w niej takiego„ innego”,
+      że aż się zechce w
+      nią grać ? Zbalansowane rozwiązania,
+      miejsca,
+      które można zobaczyć podczas wycieczki w Poznaniu,
+      nowe zadania,
+      a przede wszystkim– poręczność.Dwoimy się i troimy, aby gra
+      powstała w jak najwyższej jakości,
+      zarówno fizycznie,
+      jak i wirtualnie.Tak,
+      to znaczy, że
+      będzie ona dostępna do wydruku oraz do zagrania w plenerze na urządzeniu mobilnym–bez fruwających w powietrzu kart czy pieniędzy."
     },
-
-    "Team": {
+    "team": {
       "title": "O Nas",
       "content": "Jesteśmy grupą ambitnych ludzi, którzy nie umieją usiedzieć w miejscu. Wszyscy jesteśmy
-      mocno związani z Poznaniem i znamy się parę ładnych lat. Zebraliśmy nasze umiejętności
-      oraz atuty, aby stworzyć coś większego. Beerpoly to nasz pierwszy wspólny projekt, choć
-      niewykluczone, że ostatni. Zachęcamy do obserwowania naszych wysiłków; to wiele dla nas
-      znaczy, a i możliwe, że znajdziecie tu coś dla siebie."
+      mocno związani z Poznaniem i znamy się parę ładnych lat.Zebraliśmy nasze umiejętności
+      oraz atuty,
+      aby stworzyć coś większego.Beerpoly to nasz pierwszy wspólny projekt,
+      choć
+      niewykluczone,
+      że ostatni.Zachęcamy do obserwowania naszych wysiłków;
+      to wiele dla nas znaczy, a i możliwe,
+      że znajdziecie tu coś dla siebie."
     },
-
-   "addTeam": {
-    "title":"Dołącz do"
+    "joinus": {
+      "title": "Dołącz do"
     },
-
-   "Our_Player": {
-    "title":"<h3>Naszych<br>Graczy</h3>",
-    "content":"Graj za darmo i  i baw się? do woli!"
+    "player": {
+      "title": "Naszych Graczy",
+      "content": "Graj za darmo i baw się do woli !"
     },
-
-   "Developer": {
-    "title":"<h3>Naszych<br> Developerów</h3>",
-    "content":"Masz ciekawe pomysły? Dołącz do naszej ekipy!"
+    "developer": {
+      "title": "Naszych Developerów",
+      "content": "Masz ciekawe pomysły? Dołącz do naszej ekipy !"
     },
-
-   "Patron": {
-    "title":"<h3>Naszych<br>Patronów</h3>",
-    "content":"Zapraszamy do korzystnej wspó?pracy!"
+    "patron": {
+      "title": "Naszych Patronów",
+      "content": "Zapraszamy do korzystnej wspó?pracy !"
     },
-
 
   }
 }
