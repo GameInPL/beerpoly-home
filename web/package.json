@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GameInPL/beerpoly-home" 
+    "url": "git+https://github.com/GameInPL/beerpoly-home"
   },
   "license": "GPL3",
   "eslintConfig": {
