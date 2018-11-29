@@ -10,5 +10,15 @@
     "navbar": {
       "home": "GoatCMS"
     },
+    "menu": {
+      "home": "Home",
+      "game": "Game",
+      "about": "About",
+      "team": "Team",
+      "join": "Join us",
+      "opensource": "Open Source",
+      "download": "Download",
+      "rules": "Rules"
+    }
   }
 }

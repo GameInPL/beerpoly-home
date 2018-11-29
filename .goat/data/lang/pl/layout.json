@@ -9,6 +9,16 @@
     "head_title": "Beerpoly",
     "navbar": {
       "home": "Beerpoly",
+    },
+    "menu": {
+      "home": "Strona główna",
+      "game": "Gra",
+      "about": "O grze",
+      "team": "Zespół",
+      "join": "Dołącz do nas",
+      "opensource": "Open Source",
+      "download": "Pobierz",
+      "rules": "Zasady"
     }
   }
 }
