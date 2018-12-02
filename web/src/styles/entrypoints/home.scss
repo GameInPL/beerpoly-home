@@ -281,6 +281,13 @@ a {
   #Our_Player,#Developer,#Patron {
     width: 90%;
   }
+  #infographics {
+    width: 100%;
+    min-width: initial;
+  }
+  p {
+    margin:0 5% 0% 5%;
+  }
   #br,#go {
     background-image:none;
   }
@@ -301,24 +308,21 @@ a {
   }
 
   .menu a:hover {
-    border-style:solid ;
+    border-style:solid;
     border-width: 2px;
     padding: 5px;
   }
 }
 
+
 @media only screen and (max-width: 720px) {
-  #Our_Player,#Developer,#Patron {
-    width: 56%;
-  }
+
   #top-box {
     background-size: 210%;
   }
 }
 @media only screen and (max-width: 480px) {
-  #Our_Player,#Developer,#Patron {
-    width: 32%;
-  }
+
   #top-box {
     background-size: 250%;
   }
