@@ -11,12 +11,15 @@
       miejsca,
       które można zobaczyć podczas wycieczki w Poznaniu,
       nowe zadania,
-      a przede wszystkim– poręczność.Dwoimy się i troimy, aby gra
+      a przede wszystkim– poręczność.Dwoimy się i troimy,
+      aby gra
       powstała w jak najwyższej jakości,
       zarówno fizycznie,
       jak i wirtualnie.Tak,
-      to znaczy, że
-      będzie ona dostępna do wydruku oraz do zagrania w plenerze na urządzeniu mobilnym–bez fruwających w powietrzu kart czy pieniędzy."
+      to znaczy,
+      że
+      będzie ona dostępna do wydruku oraz do zagrania w plenerze na urządzeniu mobilnym– bez fruwających w powietrzu kart czy pieniędzy.
+        "
     },
     "team": {
       "title": "O Nas",
@@ -27,8 +30,10 @@
       choć
       niewykluczone,
       że ostatni.Zachęcamy do obserwowania naszych wysiłków;
-      to wiele dla nas znaczy, a i możliwe,
-      że znajdziecie tu coś dla siebie."
+      to wiele dla nas znaczy,
+      a i możliwe,
+      że znajdziecie tu coś dla siebie.
+      "
     },
     "joinus": {
       "title": "Dołącz do"
@@ -45,6 +50,28 @@
       "title": "Naszych Patronów",
       "content": "Zapraszamy do korzystnej wspó?pracy !"
     },
+    "gamesp": {
+      "title": "Jak zostać graczem?",
+      "content": "Bardzo prosto, otwierasz grę… i grasz. Bez żadnych haczyków,
+      czy zobowiązań.Została ona stworzona w prostym celu -
+      by sprawiać radość ludziom takim jak Ty.Także graj,
+      baw się,
+      a jeśli się spodoba,
+      to poleć znajomym.Nic nas bardziej nie uszczęśliwi!Jeśli jesteś z Poznania,
+      to z pewnością zachwyci Cię możliwość zarządzania dobrze znanymi lokacji.Z drugiej strony,
+      o ile jesteś wiaruchną spoza granic tego pięknego miasta,
+      to być może zachęci ona do przyjazdu,
+      a później będzie źródłem świetnych wspomnień."
+    },
+    "dev": {
+      "title": "Jak zostać deweloperem? ",
+      "content": "Wystarczy się z nami skontaktować. Nie trzeba być koniecznie programistą, chętnie przyjmiemy każdego, kto ma fajne pomysły, potrafi pisać, czy rysować. Tak naprawdę, nie jesteśmy w stanie powiedzieć, jakie atuty mogą nam się przydać, bądź nie. Dlatego jeśli chcesz spróbować swoich sił, to gorąco zapraszamy. Nie bój się, że nie będą pasować “daty i miejsca”; większość pracy wykonujemy zdalnie, dlatego odległość nie ma znaczenia. Jesteśmy “młodym i dynamicznym zespołem” i do wszystkich problemów podchodzimy na spokojnie wspólnie. Jeśli chcesz być częścią dobrego projektu, nie wahaj się ani chwili! "
+    },
+    "amb": {
+      "title": "Jak zostać ambasadorem?",
+      "content": "Jeśli podoba Ci się nasza inicjatywa, nie masz czasu, lub uważasz, że masz nieodpowiednie umiejętności, aby ją aktywnie tworzyć, możesz zostać ambasadorem. Być może interesujesz się marketingiem i na tym polu chciałbyś się spróbować? Ambasador marki to każda osoba, która promuje dany produkt. Można to zrobić na wiele sposobów - zainstalować grę na ogólnodostępnym urządzeniu mobilnym, celowym graniu z różnymi osobami, czy kupując nam reklamę na facebooku ;) Zapraszamy do kontaktu z nami, aby dopracować szczegóły współpracy."
+    },
+
 
   }
 }
