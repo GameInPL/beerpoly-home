@@ -82,21 +82,21 @@ p {
 
 #infographics:hover>* {}
 
-#our_player>*, #developer>*, #patron>* {
+#our-player>*, #developer>*, #patron>* {
   text-align: center;
   display: inline-block;
 }
 
-#our_player:hover>*, #developer:hover>*, #patron:hover>* {
+#our-player:hover>*, #developer:hover>*, #patron:hover>* {
   display: inline-block;
 }
 
-#our_player p, #developer p, #patron p {
+#our-player p, #developer p, #patron p {
   margin-top: 20px;
   text-align: center;
 }
 
-#our_player:hover, #developer:hover, #patron:hover {
+#our-player:hover, #developer:hover, #patron:hover {
   background: gold;
   border-style: solid;
   border-width: 4px;
@@ -120,7 +120,7 @@ a {
   text-decoration: none;
 }
 
-#our_player {
+#our-player {
   width: 200px;
   height: 300px;
   border-style: solid;
@@ -277,8 +277,9 @@ a {
 @font-face {
   font-family: 'Montserrat', 'sans-serif';
 }
-@media only screen and (max-width: 768px) {
-  #our_player,#developer,#patron {
+
+@media screen and (max-width: 768px){
+  #our-player,#developer,#patron {
     width: 90%;
   }
   #infographics {
@@ -314,8 +315,7 @@ a {
   }
 }
 
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px){
 
   #top-box {
     background-size: 210%;
