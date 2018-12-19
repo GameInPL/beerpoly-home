@@ -11,11 +11,9 @@ RUN rm main.db ||:
 RUN chmod +x /go/src/github.com/gameinpl/beerpoly-home/docker/secrets.sh
 RUN sh ./docker/secrets.sh
 
-RUN go get -u github.com/golang/dep/cmd/dep
 RUN go get -u github.com/goatcms/goatcli
-
 RUN goatcli build
-RUN dep ensure
+
 RUN go build -o bphome ./main.go
 RUN chmod +x docker/entrypoint.sh
 RUN mv /go/src/github.com/gameinpl/beerpoly-home /app

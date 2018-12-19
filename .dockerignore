@@ -1,0 +1,16 @@
+data
+tmp
+translates
+modules
+vendor
+config
+
+.git
+.ipynb_checkpoints
+Dockerfile
+.DS_Store
+.gitignore
+
+# To prevent storing dev/temporary container data
+*.csv
+tmp
