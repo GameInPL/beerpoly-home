@@ -48,7 +48,7 @@
       "title": "Our Ambassadors",
       "content": "Feel invited to cooperate with us !"
     },
-    "gamesp":{
+    "gamesPlayer":{
     "title":"How to become a player?",
     "content":"It,s pretty easy, you open the game? and play. No catches or obligations.
      It was made for a simple purpose - to bring joy a person like you.
@@ -59,13 +59,13 @@
     learn about the city and who knows? In the blink of an eye you will be planning a
     trip to see those amazing things. And then the game could be a source of some beautiful memories."
     },
-    "dev": {
+    "howDeveloper": {
       "title": "How to become a developer?",
       "content": "Just contact us.
       You don’t need to be a programmer, we will cheerfuly accept anyone with nice ideas, some writing or drawing skills. In fact, we can’t say, what trump is useful or not. Therefore, if you want to try yourself, feel welcome to join. Don’t be afraid about the place of living or time. Most of our work is being done remotely. We are “young and dynamic team” and we deal with every single issue together. Whether you want to be a part of a great project, don’t hesitate!
       "
     },
-    "amb": {
+    "ambassador": {
       "title": "How to become an ambassador?",
       "content": "If you like our initiative, but you are lacked of time, or maybe your abilities are not compatible to create it, you can become an ambassador. Maybe you are interested in marketing and want to try yourself on this field? A brand ambassador is a person, who promote a product. It can be done in many ways - by installing game on public mobile device, intentionaling playing it with various people or buying us an advertisement on facebook ;) We are waiting for you to contact us to talk about details!"
     },
