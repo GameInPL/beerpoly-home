@@ -82,21 +82,21 @@ p {
 
 #infographics:hover>* {}
 
-#Our_Player>*, #Developer>*, #Patron>* {
+#our-player>*, #developer>*, #patron>* {
   text-align: center;
   display: inline-block;
 }
 
-#Our_Player:hover>*, #Developer:hover>*, #Patron:hover>* {
+#our-player:hover>*, #developer:hover>*, #patron:hover>* {
   display: inline-block;
 }
 
-#Our_Player p, #Developer p, #Patron p {
+#our-player p, #developer p, #patron p {
   margin-top: 20px;
   text-align: center;
 }
 
-#Our_Player:hover, #Developer:hover, #Patron:hover {
+#our-player:hover, #developer:hover, #patron:hover {
   background: gold;
   border-style: solid;
   border-width: 4px;
@@ -120,7 +120,7 @@ a {
   text-decoration: none;
 }
 
-#Our_Player {
+#our-player {
   width: 200px;
   height: 300px;
   border-style: solid;
@@ -128,7 +128,7 @@ a {
   border-color: gold;
 }
 
-#Developer {
+#developer {
   width: 200px;
   height: 300px;
   border-style: solid;
@@ -136,7 +136,7 @@ a {
   border-color: gold;
 }
 
-#Patron {
+#patron {
   width: 200px;
   height: 300px;
   border-style: solid;
@@ -204,7 +204,6 @@ a {
 
 .fa {
   padding: 30px 20px 20px 20px;
-  //font-size: 30px width: 50px;
   text-align: center;
   text-decoration: none;
 }
@@ -258,7 +257,6 @@ a {
   width: 180px;
   height: 180px;
 }
-
 .info {
   margin-left: auto;
   margin-right: auto;
@@ -268,7 +266,6 @@ a {
   position: center;
   float: left;
 }
-
 .konteks {
   width: 100vw;
   height: 100vh;
@@ -281,6 +278,66 @@ a {
   font-family: 'Montserrat', 'sans-serif';
 }
 
+@media screen and (max-width: 768px){
+  #our-player,#developer,#patron {
+    width: 90%;
+  }
+  #infographics {
+    width: 100%;
+    min-width: initial;
+  }
+  p {
+    margin:0% 5% 0% 5%;
+  }
+  #br,#go {
+    background-image:none;
+  }
+
+  .menu>li:first-child {
+    border-left: 0px;
+  }
+
+  .menu>li {
+    display: inline-block;
+    padding-left: 35%;
+    padding-right: 35%;
+    border-right: 0px;
+  }
+  #top-box {
+    background-size: 150%;
+    background-image: url('/static/image/gg.png');
+  }
+
+  .menu a:hover {
+    border-style:solid;
+    border-width: 2px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 720px){
+
+  #top-box {
+    background-size: 210%;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  #top-box {
+    background-size: 250%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #top-box {
+    background-size: 350%;
+    height: 340px;
+  }
+  .menu>li {
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 .clear {
   clear: both;
 }

@@ -1,82 +1,95 @@
 {{define "content"}}
-{{$prefix:=(print .Lang ".view.custom.home.main.")}}
-
-<!-- Header -->
-<h1 class="logo">Beerpoly</h1>
-
-<!-- Menu -->
-<div id="top-box">
-  <nav id="topnav">
-    {{template "main_menu" .}}
-    <div>
-      <ul id="scene">
-        <li class="layer" id="br" data-depth="0.1"></li>
-        <li class="layer" id="go" data-depth="0.3"></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-<!-- Content -->
-<div id="Games">
-  <h2>{{TranslateFor "game.title" $prefix}}</h2>
-  <p>
-    {{TranslateFor "game.content" $prefix}}
-  </p>
-</div>
-
-<div id="Team">
-  <h2>{{TranslateFor "team.title" $prefix}}</h2>
-  <p>
+  {{$prefix:=(print .Lang ".view.custom.home.main.")}}
+  <!-- Header -->
+  <h1 class="logo">Beerpoly</h1>
+  <!-- Menu -->
+  <div id="top-box">
+    <nav id="topnav">
+      {{template "main_menu" .}}
+      <div>
+        <ul id="scene">
+          <li class="layer" id="br" data-depth="0.1"></li>
+          <li class="layer" id="go" data-depth="0.3"></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content -->
+  <div id="Games">
+    <h2>{{TranslateFor "game.title" $prefix}}</h2>
+    <p>
+      {{TranslateFor "game.content" $prefix}}
+    </p>
+  </div>
+  <div id="Team">
+    <h2>{{TranslateFor "team.title" $prefix}}</h2>
+    <p>
       {{TranslateFor "team.content" $prefix}}
-  </p>
-</div>
-
-<section id="addTeam">
-  <h2>{{TranslateFor "joinus.title" $prefix}}</h2>
-  <div id="infographics">
-    <div id="Our_Player" class="swing">
-      <a href="#Games" class="link">
-        <h3>{{TranslateFor "player.title" $prefix}}</h3>
-        <img class="obrazek" src='/static/image/pad.svg' width="100" height="100" alt="infographics" />
-        <p>{{TranslateFor "player.content" $prefix}}</p>
-      </a>
-    </div>
-
-    <div id="Developer" class="swing">
-      <a href="#Games" class="link">
-        <h3>{{TranslateFor "developer.title" $prefix}}</h3>
-        <img class="obrazek" src='/static/image/team.svg' width="100" height="100" alt="infographics" />
-        <p>{{TranslateFor "developer.content" $prefix}}</p>
-      </a>
-    </div>
-
-    <div id="Patron" class="swing">
-      <a href="#Games" class="link">
-        <h3>{{TranslateFor "patron.title" $prefix}}</h3>
-        <img class="obrazek" src='/static/image/patrons.png' width="100" height="100" alt="infographics" />
-        <p>{{TranslateFor "patron.title" $prefix}}</p>
-      </a>
-    </div>
-    <div class="clear"></div>
+    </p>
   </div>
-</section>
-
-<!-- Footer -->
-<div class="c">
-  <div>
-    <div id="belt">
-      <footer>
-        <div id="social-icons">
-          <a href="https://www.facebook.com/Gameinpl-223405228364045/" class="fa fa-facebook"> </a>
-          <div class="info">
-            <a href="https://opensource.org/licenses/GPL-3.0">OpenSource GPL-3.0</a> & <a href="https://creativecommons.org/licenses/">CC BY-NC-SA</a> &copy; 2018
+  <section id="addTeam">
+    <h2>{{TranslateFor "joinus.title" $prefix}}</h2>
+    <div id="infographics">
+      <div id="our-player" class="swing">
+        <a href="#gamesp" class="link">
+          <h3>{{TranslateFor "player.title" $prefix}}</h3>
+          <img class="obrazek" src='/static/image/pad.svg' width="100" height="100" alt="infographics"/>
+          <p>{{TranslateFor "player.content" $prefix}}</p>
+        </a>
+      </div>
+      <div id="developer" class="swing">
+        <a href="#dev" class="link">
+          <h3>{{TranslateFor "developer.title" $prefix}}</h3>
+          <img class="obrazek" src='/static/image/team.svg' width="100" height="100" alt="infographics"/>
+          <p>{{TranslateFor "developer.content" $prefix}}</p>
+        </a>
+      </div>
+      <div id="patron" class="swing">
+        <a href="#amb" class="link">
+          <h3>{{TranslateFor "patron.title" $prefix}}</h3>
+          <img class="obrazek" src='/static/image/patrons.png' width="100" height="100" alt="infographics"/>
+          <p>{{TranslateFor "patron.title" $prefix}}</p>
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <div class="c">
+    <div id="gamesp">
+      <h2>{{TranslateFor "gamesp.title" $prefix}}</h2>
+      <p>
+        {{TranslateFor "gamesp.content" $prefix}}
+      </p>
+    </div>
+    <div id="dev">
+      <h2>{{TranslateFor "dev.title" $prefix}}</h2>
+      <p>
+        {{TranslateFor "dev.content" $prefix}}
+      </p>
+    </div>
+    <div id="amb">
+      <h2>{{TranslateFor "amb.title" $prefix}}</h2>
+      <p>
+        {{TranslateFor "amb.content" $prefix}}
+      </p>
+    </div>
+    <!-- Footer -->
+    <div>
+      <div id="belt">
+        <footer>
+          <div id="social-icons">
+            <a href="https://www.facebook.com/Gameinpl-223405228364045/" class="fa fa-facebook"></a>
+            <div class="info">
+              <a href="https://opensource.org/licenses/GPL-3.0">OpenSource GPL-3.0</a>
+              &
+              <a href="https://creativecommons.org/licenses/">CC BY-NC-SA</a>
+              &copy; 2018
+            </div>
+            <a href="#" class="fa fa-twitter"></a>
           </div>
-          <a href="#" class="fa fa-twitter"> </a>
-        </div>
-        <div style="clear:both"></div>
-      </footer>
+          <div style="clear:both"></div>
+        </footer>
+      </div>
     </div>
   </div>
-</div>
 {{end}}
